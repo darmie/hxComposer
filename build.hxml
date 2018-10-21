@@ -1,0 +1,16 @@
+-cp src
+-cp test
+
+-lib hscript
+-lib compiletime
+
+-D hscriptPos
+
+-main Test
+
+-neko test.n 
+
+#-cpp bin
+
+
+-cmd neko test.n

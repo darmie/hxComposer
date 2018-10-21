@@ -1,0 +1,28 @@
+import("add", ["add"]); // import 'add' export from module
+import("module", ["MyModule"]);
+
+extend("ClassModule", {}, MyModule);
+
+
+log(MyModule.minus(5, 8));
+
+var val = ClassModule.sum(5, 8);
+
+var testClass = new TestClass();
+log(testClass.message);
+log(val);
+
+
+var map = new haxe.ds.StringMap();
+map.set("hello", "world");
+map.set("data", {
+    value: "Hello world"
+});
+log(map.get("data"));
+
+
+log(Math.PI);
+
+var ins = Type.createInstance(TestClass, []);
+
+log(ins);

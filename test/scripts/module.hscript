@@ -1,0 +1,10 @@
+import("module2", ["Math"]);
+
+extend("MyModule", {
+    sum : function(x , y){
+        return x+y;
+    }
+}, Math);
+
+exports.set("MyModule", MyModule);
+

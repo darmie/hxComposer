@@ -1,0 +1,6 @@
+var add = function (x, y) {
+    return x+y;
+}
+
+
+exports.set("add", add);
